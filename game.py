@@ -55,7 +55,7 @@ class Game:
         self.chess = Chess(self.screen, pieces_src, self.board_locations, square_length)
 
         while self.running:
-            self.clock.tick(5)
+            self.clock.tick(30)
             for event in pygame.event.get():
                 key_pressed = pygame.key.get_pressed()
                 if event.type == pygame.QUIT or key_pressed[K_ESCAPE]:
